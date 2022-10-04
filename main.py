@@ -45,11 +45,7 @@ def telegram_bot(token):
             bot.send_message(message.chat.id, "Меню на текущий час\n")
             bot.send_message(message.chat.id, menu)
             bot.send_message(message.chat.id, "https://dodopizza.kz/")
-        # elif message.text == "Напитки:drinks":
-        #      bot.send_message(message.chat.id, info)
-        #      menu = main(message.text.split(":")[1])
-        #      bot.send_message(message.chat.id, "Меню напитков на сегодня\n")
-        #      bot.send_message(message.chat.id, menu)
+        
 
         else:
             bot.send_message(message.chat.id, "Упс! Неверная команда, попробуй еще раз")
