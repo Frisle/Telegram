@@ -1,4 +1,5 @@
 from selenium.webdriver import Chrome
+from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import time
 import os
@@ -7,9 +8,16 @@ import os
 url = "https://dodopizza.kz/petropavlovsk"
 html_file = "saved_page.html"
 
-def get_page():
 
-    driver = Chrome(executable_path="chromedriver.exe")
+def get_page():
+    chrome_options = Options()
+
+    chrome_options.add_argument('--no-sandbox')  # Bypass OS security model
+    chrome_options.add_argument('--disable-gpu')  # applicable to windows os only
+    chrome_options.add_argument('start-minimized')  #
+    chrome_options.add_argument('disable-infobars')
+    chrome_options.add_argument("--disable-extensions")
+    driver = Chrome(executable_path="chromedriver.exe", options=chrome_options)
     driver.get(url)
 
     with open(html_file, "w", encoding="utf-8") as w:
@@ -110,7 +118,7 @@ def main(product_type, ingredience="С мясом"):
             if elem in vegan_menu:
 
                 vegan_menu.remove(elem)
-        print(meat_menu)
+
 
         return vegan_menu, meat_menu
     sort_menu()

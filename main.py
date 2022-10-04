@@ -37,8 +37,6 @@ def telegram_bot(token):
 
     @bot.message_handler(content_types=["text"])
     def message_handler(message):
-        print(message.text.split(":"))
-        print(message.text.split(":"))
         if message.text:
             bot.send_message(message.chat.id, info)
             menu = main(message.text.split(":")[2], message.text.split(":")[1])
