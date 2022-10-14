@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d1ad2d1a-2ec6-46a8-bd21-4961a65f4aed" name="Changes" comment="telegramm-bot project update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dodo_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/dodo_parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/link_analizator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/product.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/saved_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,8 +150,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.dodo_parse" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.product" />
         <item itemvalue="Python.link_analizator" />
       </list>
@@ -181,7 +180,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664633591375</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="telegramm-bot project update">
+      <created>1664872869100</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664872869100</updated>
+    </task>
+    <task id="LOCAL-00004" summary="telegramm-bot project update">
+      <created>1664894461098</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664894461099</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -21,7 +21,7 @@ def telegram_bot(token):
         btn4 = types.KeyboardButton("Закуска:С мясом:snacks")
         btn5 = types.KeyboardButton("Напитки:Напитки:drinks")
         btn6 = types.KeyboardButton("Десерты:Десерты:desserts")
-
+        
 
         markup.add(btn1)
         markup.add(btn2)
