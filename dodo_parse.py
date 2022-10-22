@@ -1,5 +1,6 @@
-from selenium.webdriver import Chrome
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver import Firefox
+from fake_useragent import UserAgent
+from selenium.webdriver.firefox.options import Options
 from bs4 import BeautifulSoup
 import time
 import os
@@ -11,18 +12,18 @@ html_file = "saved_page.html"
 
 def get_page():
     chrome_options = Options()
-
-    chrome_options.add_argument('--no-sandbox')  # Bypass OS security model
-    chrome_options.add_argument('--disable-gpu')  # applicable to windows os only
-    chrome_options.add_argument('start-minimized')  #
-    chrome_options.add_argument('disable-infobars')
-    chrome_options.add_argument("--disable-extensions")
-    driver = Chrome(executable_path="chromedriver.exe", options=chrome_options)
+    print("step one pass")
+    chrome_options.add_argument("-headless")
+    print("step two pass")
+    driver = Firefox(executable_path="/snap/bin/geckodriver", options=chrome_options)
+    print("step three pass")
     driver.get(url)
-
+    time.sleep(5)
     with open(html_file, "w", encoding="utf-8") as w:
         w.write(driver.page_source)
-
+    print("page loaded")
+    driver.close()
+get_page()
 def try_get_page():
     try:
         current_time = time.time()

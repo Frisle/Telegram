@@ -30,7 +30,7 @@ def telegram_bot(token):
         markup.add(btn5)
         markup.add(btn6)
 
-        bot.send_message(message.chat.id, "Тест-бот готов работать для пирожка! "
+        bot.send_message(message.chat.id,
                                           "В меню бота можно выбрать весь ассортимент "
                                           "До-До пиццерии", reply_markup=markup)
 
@@ -43,7 +43,6 @@ def telegram_bot(token):
             bot.send_message(message.chat.id, "Меню на текущий час\n")
             bot.send_message(message.chat.id, menu)
             bot.send_message(message.chat.id, "https://dodopizza.kz/")
-        
 
         else:
             bot.send_message(message.chat.id, "Упс! Неверная команда, попробуй еще раз")
@@ -53,5 +52,5 @@ def telegram_bot(token):
     bot.polling()
 
 
-if __name__ == '__main__':
-    telegram_bot(token)
+
+telegram_bot(token)
